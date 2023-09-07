@@ -1,4 +1,12 @@
 {
   "author": "Kirara Bernstein",
-  "locale": "en"
+  "locale": "en",
+
+  "app_title" : "iConfide - Mobile Apps",
+  "app_subtitle" : "Let's Chat",
+  "signin_text" : "Sign in",
+  "register_text" : "Register",
+  "back_text" : "Back",
+  "buy_text" : "Buy Now",
+  "have_account" : "Already have an account? sign in"
 }

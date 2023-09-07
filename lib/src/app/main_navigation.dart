@@ -1,9 +1,13 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:iconfide/src/features/favorite/view/favorite_page.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:iconfide/gen/assets.gen.dart';
+import 'package:iconfide/src/features/class/view/class_page.dart';
 import 'package:iconfide/src/features/home/view/home_page.dart';
-import 'package:iconfide/src/features/profile/view/profile_page.dart';
+import 'package:iconfide/src/features/private_chat/view/list_private_chat_page.dart';
+import 'package:iconfide/src/features/video/view/video_page.dart';
+import 'package:iconfide/src/features/workshop/view/workshop_page.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent-tab-view.dart';
 
 import '../config/constant.dart';
@@ -44,51 +48,130 @@ class _MainNavigationState extends State<MainNavigation> {
   List<Widget> _buildScreens() {
     return [
       const HomePage(),
-      const FavoritePage(),
-      const ProfilePage(),
+      const ListPrivateChatPage(),
+      const VideoPage(),
+      const WorkshopPage(),
+      const ClassPage(),
     ];
   }
 
   List<PersistentBottomNavBarItem> _navBarsItems() {
     return [
       PersistentBottomNavBarItem(
-        icon: const Icon(Icons.home, size: 20),
-        inactiveIcon: const Icon(Icons.home_outlined, size: 20),
-        title: "Home",
+        icon: Container(
+          height: 32,
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(16),
+            color: AppColors.primaryColors,
+          ),
+          child: SvgPicture.asset(
+            Assets.icons.berandaActive.path,
+          ),
+        ),
+        inactiveIcon: SvgPicture.asset(Assets.icons.berandaInactive.path),
+        title: "Beranda",
         textStyle: const TextStyle(
           fontWeight: FontWeight.w500,
           fontSize: AppConstants.kFontSizeS,
         ),
         activeColorPrimary: AppColors.primary,
-        inactiveColorPrimary: UIColors.white,
-        activeColorSecondary: UIColors.white,
-        inactiveColorSecondary: UIColors.white,
+        inactiveColorPrimary: UIColors.text,
+        activeColorSecondary: UIColors.text,
+        inactiveColorSecondary: UIColors.text,
       ),
       PersistentBottomNavBarItem(
-        icon: const Icon(Icons.favorite, size: 20),
-        inactiveIcon: const Icon(Icons.favorite_outline, size: 20),
-        title: "Favorite",
+        icon: Container(
+          height: 32,
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(16),
+            color: AppColors.primaryColors,
+          ),
+          child: SvgPicture.asset(
+            Assets.icons.privateChatActive.path,
+          ),
+        ),
+        inactiveIcon: SvgPicture.asset(Assets.icons.privateChatInactive.path),
+        title: "Private Chat",
         textStyle: const TextStyle(
           fontWeight: FontWeight.w500,
           fontSize: AppConstants.kFontSizeS,
         ),
         activeColorPrimary: AppColors.primary,
-        inactiveColorPrimary: UIColors.white,
-        activeColorSecondary: UIColors.white,
-        inactiveColorSecondary: UIColors.white,
+        inactiveColorPrimary: UIColors.text,
+        activeColorSecondary: UIColors.text,
+        inactiveColorSecondary: UIColors.text,
       ),
       PersistentBottomNavBarItem(
-        icon: const Icon(Icons.person, size: 20),
-        inactiveIcon: const Icon(Icons.person_outline, size: 20),
-        title: "Profile",
+        icon: Container(
+          height: 32,
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(16),
+            color: AppColors.primaryColors,
+          ),
+          child: SvgPicture.asset(
+            Assets.icons.videoActive.path,
+          ),
+        ),
+        inactiveIcon: SvgPicture.asset(Assets.icons.videoInactive.path),
+        title: "Video",
         textStyle: const TextStyle(
           fontWeight: FontWeight.w500,
           fontSize: AppConstants.kFontSizeS,
         ),
         activeColorPrimary: AppColors.primary,
-        inactiveColorPrimary: UIColors.white,
-        activeColorSecondary: UIColors.white,
-        inactiveColorSecondary: UIColors.white,
+        inactiveColorPrimary: UIColors.text,
+        activeColorSecondary: UIColors.text,
+        inactiveColorSecondary: UIColors.text,
+      ),
+      PersistentBottomNavBarItem(
+        icon: Container(
+          height: 32,
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(16),
+            color: AppColors.primaryColors,
+          ),
+          child: SvgPicture.asset(
+            Assets.icons.shoppingCartActive.path,
+            height: 20,
+          ),
+        ),
+        inactiveIcon: SvgPicture.asset(Assets.icons.shoppingCartInactive.path),
+        title: "Workshop",
+        textStyle: const TextStyle(
+          fontWeight: FontWeight.w500,
+          fontSize: AppConstants.kFontSizeS,
+        ),
+        activeColorPrimary: AppColors.primary,
+        inactiveColorPrimary: UIColors.text,
+        activeColorSecondary: UIColors.text,
+        inactiveColorSecondary: UIColors.text,
+      ),
+      PersistentBottomNavBarItem(
+        icon: Container(
+          height: 32,
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(16),
+            color: AppColors.primaryColors,
+          ),
+          child: SvgPicture.asset(
+            Assets.icons.classActive.path,
+          ),
+        ),
+        inactiveIcon: SvgPicture.asset(Assets.icons.classInactive.path),
+        title: "Class",
+        textStyle: const TextStyle(
+          fontWeight: FontWeight.w500,
+          fontSize: AppConstants.kFontSizeS,
+        ),
+        activeColorPrimary: AppColors.primary,
+        inactiveColorPrimary: UIColors.text,
+        activeColorSecondary: UIColors.text,
+        inactiveColorSecondary: UIColors.text,
       ),
     ];
   }
@@ -96,7 +179,6 @@ class _MainNavigationState extends State<MainNavigation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: UIColors.white,
       resizeToAvoidBottomInset: true,
       body: PersistentTabView(
         context,
@@ -104,7 +186,7 @@ class _MainNavigationState extends State<MainNavigation> {
         screens: _buildScreens(),
         items: _navBarsItems(),
         confineInSafeArea: true,
-        backgroundColor: AppColors.primary,
+        backgroundColor: UIColors.white,
         handleAndroidBackButtonPress: true,
         popAllScreensOnTapAnyTabs: true,
         resizeToAvoidBottomInset: true,
@@ -130,7 +212,6 @@ class _MainNavigationState extends State<MainNavigation> {
           curve: Curves.easeInSine,
           duration: Duration(milliseconds: 300),
         ),
-
         navBarStyle: NavBarStyle.style3,
       ),
     );

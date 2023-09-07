@@ -15,11 +15,28 @@ import 'package:lottie/lottie.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
-  /// File path: assets/icons/Beranda.svg
-  SvgGenImage get beranda => const SvgGenImage('assets/icons/Beranda.svg');
+  /// File path: assets/icons/beranda_active.svg
+  SvgGenImage get berandaActive =>
+      const SvgGenImage('assets/icons/beranda_active.svg');
 
-  /// File path: assets/icons/class_icon.svg
-  SvgGenImage get classIcon => const SvgGenImage('assets/icons/class_icon.svg');
+  /// File path: assets/icons/beranda_inactive.svg
+  SvgGenImage get berandaInactive =>
+      const SvgGenImage('assets/icons/beranda_inactive.svg');
+
+  /// File path: assets/icons/call.svg
+  SvgGenImage get call => const SvgGenImage('assets/icons/call.svg');
+
+  /// File path: assets/icons/call_silent.svg
+  SvgGenImage get callSilent =>
+      const SvgGenImage('assets/icons/call_silent.svg');
+
+  /// File path: assets/icons/class_active.svg
+  SvgGenImage get classActive =>
+      const SvgGenImage('assets/icons/class_active.svg');
+
+  /// File path: assets/icons/class_inactive.svg
+  SvgGenImage get classInactive =>
+      const SvgGenImage('assets/icons/class_inactive.svg');
 
   /// File path: assets/icons/credit.svg
   SvgGenImage get credit => const SvgGenImage('assets/icons/credit.svg');
@@ -27,15 +44,28 @@ class $AssetsIconsGen {
   /// File path: assets/icons/dana.svg
   SvgGenImage get dana => const SvgGenImage('assets/icons/dana.svg');
 
+  /// File path: assets/icons/discovery.svg
+  SvgGenImage get discovery => const SvgGenImage('assets/icons/discovery.svg');
+
+  /// File path: assets/icons/filter.svg
+  SvgGenImage get filter => const SvgGenImage('assets/icons/filter.svg');
+
   /// File path: assets/icons/link_aja.svg
   SvgGenImage get linkAja => const SvgGenImage('assets/icons/link_aja.svg');
 
   /// File path: assets/icons/ovo.svg
   SvgGenImage get ovo => const SvgGenImage('assets/icons/ovo.svg');
 
-  /// File path: assets/icons/private_chat.svg
-  SvgGenImage get privateChat =>
-      const SvgGenImage('assets/icons/private_chat.svg');
+  /// File path: assets/icons/paper_plus.svg
+  SvgGenImage get paperPlus => const SvgGenImage('assets/icons/paper_plus.svg');
+
+  /// File path: assets/icons/private_chat_active.svg
+  SvgGenImage get privateChatActive =>
+      const SvgGenImage('assets/icons/private_chat_active.svg');
+
+  /// File path: assets/icons/private_chat_inactive.svg
+  SvgGenImage get privateChatInactive =>
+      const SvgGenImage('assets/icons/private_chat_inactive.svg');
 
   /// File path: assets/icons/search.svg
   SvgGenImage get search => const SvgGenImage('assets/icons/search.svg');
@@ -43,26 +73,65 @@ class $AssetsIconsGen {
   /// File path: assets/icons/shopee_pay.svg
   SvgGenImage get shopeePay => const SvgGenImage('assets/icons/shopee_pay.svg');
 
-  /// File path: assets/icons/shopping_cart.svg
-  SvgGenImage get shoppingCart =>
-      const SvgGenImage('assets/icons/shopping_cart.svg');
+  /// File path: assets/icons/shopping_cart_active.svg
+  SvgGenImage get shoppingCartActive =>
+      const SvgGenImage('assets/icons/shopping_cart_active.svg');
+
+  /// File path: assets/icons/shopping_cart_inactive.svg
+  SvgGenImage get shoppingCartInactive =>
+      const SvgGenImage('assets/icons/shopping_cart_inactive.svg');
 
   /// File path: assets/icons/video.svg
   SvgGenImage get video => const SvgGenImage('assets/icons/video.svg');
 
+  /// File path: assets/icons/video_active.svg
+  SvgGenImage get videoActive =>
+      const SvgGenImage('assets/icons/video_active.svg');
+
+  /// File path: assets/icons/video_inactive.svg
+  SvgGenImage get videoInactive =>
+      const SvgGenImage('assets/icons/video_inactive.svg');
+
+  /// File path: assets/icons/visa.svg
+  SvgGenImage get visa => const SvgGenImage('assets/icons/visa.svg');
+
+  /// File path: assets/icons/voice.svg
+  SvgGenImage get voice => const SvgGenImage('assets/icons/voice.svg');
+
+  /// File path: assets/icons/volume_off.svg
+  SvgGenImage get volumeOff => const SvgGenImage('assets/icons/volume_off.svg');
+
+  /// File path: assets/icons/volume_up.svg
+  SvgGenImage get volumeUp => const SvgGenImage('assets/icons/volume_up.svg');
+
   /// List of all assets
   List<SvgGenImage> get values => [
-        beranda,
-        classIcon,
+        berandaActive,
+        berandaInactive,
+        call,
+        callSilent,
+        classActive,
+        classInactive,
         credit,
         dana,
+        discovery,
+        filter,
         linkAja,
         ovo,
-        privateChat,
+        paperPlus,
+        privateChatActive,
+        privateChatInactive,
         search,
         shopeePay,
-        shoppingCart,
-        video
+        shoppingCartActive,
+        shoppingCartInactive,
+        video,
+        videoActive,
+        videoInactive,
+        visa,
+        voice,
+        volumeOff,
+        volumeUp
       ];
 }
 
@@ -85,6 +154,33 @@ class $AssetsImagesGen {
   AssetGenImage get bannerImage =>
       const AssetGenImage('assets/images/banner_image.png');
 
+  /// File path: assets/images/credit.png
+  AssetGenImage get credit => const AssetGenImage('assets/images/credit.png');
+
+  /// File path: assets/images/dana.png
+  AssetGenImage get dana => const AssetGenImage('assets/images/dana.png');
+
+  /// File path: assets/images/image_video.png
+  AssetGenImage get imageVideo =>
+      const AssetGenImage('assets/images/image_video.png');
+
+  /// File path: assets/images/image_video2.png
+  AssetGenImage get imageVideo2 =>
+      const AssetGenImage('assets/images/image_video2.png');
+
+  /// File path: assets/images/linkaja.png
+  AssetGenImage get linkaja => const AssetGenImage('assets/images/linkaja.png');
+
+  /// File path: assets/images/ovo.png
+  AssetGenImage get ovo => const AssetGenImage('assets/images/ovo.png');
+
+  /// File path: assets/images/people.png
+  AssetGenImage get people => const AssetGenImage('assets/images/people.png');
+
+  /// File path: assets/images/shopeepay.png
+  AssetGenImage get shopeepay =>
+      const AssetGenImage('assets/images/shopeepay.png');
+
   /// File path: assets/images/user_icon_female.png
   AssetGenImage get userIconFemale =>
       const AssetGenImage('assets/images/user_icon_female.png');
@@ -97,6 +193,9 @@ class $AssetsImagesGen {
   AssetGenImage get userIconMale2 =>
       const AssetGenImage('assets/images/user_icon_male_2.png');
 
+  /// File path: assets/images/visa.png
+  AssetGenImage get visa => const AssetGenImage('assets/images/visa.png');
+
   /// List of all assets
   List<AssetGenImage> get values => [
         user1,
@@ -104,9 +203,18 @@ class $AssetsImagesGen {
         user3,
         banner,
         bannerImage,
+        credit,
+        dana,
+        imageVideo,
+        imageVideo2,
+        linkaja,
+        ovo,
+        people,
+        shopeepay,
         userIconFemale,
         userIconMale,
-        userIconMale2
+        userIconMale2,
+        visa
       ];
 }
 

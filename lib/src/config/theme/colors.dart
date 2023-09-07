@@ -6,10 +6,11 @@ class AppColors {
   static final MaterialColor primaryColors =
       ColorUtility.generateMaterialColor(primary);
 
-  static const Color primary = Color(0xFF1e1e1e);
+  static const Color primary = Color(0xFF995196);
   static const Color primaryLight = Color(0xff7209b7);
   static const Color primaryDark = Color(0xff06283D);
   static const Color danger = Color(0xffE76161);
+  static const Color brown = Color(0xff3C3942);
   static const Color pink = Color(0xffCF497A);
   static const Color greenAccent = Color(0xff00A884);
   static const Color green = Color(0xff92C000);
@@ -35,7 +36,7 @@ class UIColors {
   static const Color grey_60 = Color(0xFFADB3BC);
   static const Color grey_80 = Color(0xFF50555C);
   static const Color grey_100 = Color(0xFF111111);
-  static const Color custom_grey1 = Color(0xFFC4C4C4);
+  static const Color custom_grey1 = Color(0xFF6A6A6A);
 
   static const Color defaultScaffoldBackgroundColor = Color(0xfffafafa);
 
